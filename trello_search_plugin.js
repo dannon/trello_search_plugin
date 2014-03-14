@@ -44,7 +44,7 @@ $(function(){
                     rslts_box = $('#search_overlay_results');
                     rslts_box.html('');
                     $.each(results, function(i, result){
-                        cardurl = "https://trello.com/c/" + result.ref
+                        cardurl = "https://trello.com/c/" + result.ref;
                         rslts_box.append('<p id="c_'+result.ref+'"><a target="_blank" href="'+cardurl+'">' + card_dict[result.ref].name + '</a></p><br>');
                         $('#c_'+result.ref).mouseover(function(){
                             $('#search_overlay_detail').html('<p>' + card_dict[result.ref].desc + '</p>');
