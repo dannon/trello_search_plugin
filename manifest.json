@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trello Board Search (public only)",
+  "description": "This extension allows better searching of a trello board",
+  "version": "1.0",
+
+  "content_scripts" : [
+    {
+      "matches": ["http://api.trello.com/*", "https://api.trello.com/*",
+                  "http://trello.com/*", "https://trello.com/*"],
+      "js": ["jquery-2.1.0.js","lunr.js","trello_search_plugin.js"]
+    }
+  ]
+}
